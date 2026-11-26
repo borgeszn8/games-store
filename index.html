@@ -1,0 +1,207 @@
+<!DOCTYPE html> <!-- tipo do documento -->
+<html lang="pt-BR"> <!-- idioma do documento -->
+<head>
+    <meta charset="UTF-8"> <!-- codificação de caracteres especiais-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store.games</title> <!-- título da página (visivle na web) -->
+    <link rel="stylesheet" href="css/estilo.css"> <!-- link para o arquivo de estilo -->
+</head>
+<body>
+    <!-- cabeçalho: apresentar a identidade do site-->
+<header>
+    <h1>🎮store games🎮</h1>
+    <h3>A melhor loja de jogos do Brasil</h3>
+     <h5>Senac São Leopoldo | Tecnologia</h5>
+
+</header>
+<!-- CONTEUDO PRINCIPAL -->
+<main>
+    <h3>Jogos no melhor preço do brasil!</h3>
+    <!-- Catalogo: agrupa os produtos da loja -->
+    <section class="catalogo">
+        <!-- 
+        cada article representa um produto.
+        calss: permita aplicar o estilo do css (referencia)
+        src: indica o caminho da imagem (fonte)
+        alt: descreve a imagem
+        onclick: executa uma função JS ao clicar
+        id: identifica um elemento unico no HTML
+         -->
+        <!-- PRODUTO 1: Indice 0-->
+        <article class="produto">
+            <img src="imagens/gta6.webp" alt="GTA 6">
+            <h3>GTA 6</h3>
+            <p class="preco">R$ 499,90</p>
+            <!--  Controles para alterar a quantidade do produto -->
+            <div class="quantidade">
+            <!-- REMOVE UMA UNIDADE DO JOGO -->
+            <button onclick="removerJogo(0)">-</button>
+            <!-- QUANTIDADE ATUALIZADA PELO JS -->
+            <span id="qtd0">0</span>
+            <!-- ADICIONA UMA UNIDADE DO JOGO -->
+            <button onclick="adicionarJogo(0)">+</button>
+            </div>
+        </article>
+        <!-- Terminou produto 1 -->
+          <!-- PRODUTO 2: Indice 1-->
+        <article class="produto">
+            <img src="imagens/forza6.webp" alt="Forza 6">
+            <h3>Forza 6</h3>
+            <p class="preco">R$ 249,90</p>
+            <!--  Controles para alterar a quantidade do produto -->
+            <div class="quantidade">
+            <!-- REMOVE UMA UNIDADE DO JOGO -->
+            <button onclick="removerJogo(1)">-</button>
+            <!-- QUANTIDADE ATUALIZADA PELO JS -->
+            <span id="qtd1">0</span>
+            <!-- ADICIONA UMA UNIDADE DO JOGO -->
+            <button onclick="adicionarJogo(1)">+</button>
+            </div>
+        </article>
+        <!-- Terminou produto 2 -->
+          <!-- PRODUTO 3: Indice 2-->
+        <article class="produto">
+            <img src="imagens/nba2k27.webp" alt="NBA 2K27">
+            <h3>NBA 2K27</h3>
+            <p class="preco">R$ 299,90</p>
+            <!--  Controles para alterar a quantidade do produto -->
+            <div class="quantidade">
+            <!-- REMOVE UMA UNIDADE DO JOGO -->
+            <button onclick="removerJogo(2)">-</button>
+            <!-- QUANTIDADE ATUALIZADA PELO JS -->
+            <span id="qtd2">0</span>
+            <!-- ADICIONA UMA UNIDADE DO JOGO -->
+            <button onclick="adicionarJogo(2)">+</button>
+            </div>
+        </article>
+        <!-- Terminou produto 3 -->
+          <!-- PRODUTO 4: Indice 3-->
+        <article class="produto">
+            <img src="imagens//ets2.jpg" alt="Euro Truck Simulator 2">
+            <h3>Euro Truck Simulator 2</h3>
+            <p class="preco">R$ 199,90</p>
+            <!--  Controles para alterar a quantidade do produto -->
+            <div class="quantidade">
+            <!-- REMOVE UMA UNIDADE DO JOGO -->
+            <button onclick="removerJogo(3)">-</button>
+            <!-- QUANTIDADE ATUALIZADA PELO JS -->
+            <span id="qtd3">0</span>
+            <!-- ADICIONA UMA UNIDADE DO JOGO -->
+            <button onclick="adicionarJogo(3)">+</button>
+            </div>
+        </article>
+        <!-- Terminou produto 4 -->
+          <!-- PRODUTO 5: Indice 4-->
+        <article class="produto">
+            <img src="imagens/dayz.jpg" alt="DayZ">
+            <h3>DayZ</h3>
+            <p class="preco">R$ 99,90</p>
+            <!--  Controles para alterar a quantidade do produto -->
+            <div class="quantidade">
+            <!-- REMOVE UMA UNIDADE DO JOGO -->
+            <button onclick="removerJogo(4)">-</button>
+            <!-- QUANTIDADE ATUALIZADA PELO JS -->
+            <span id="qtd4">0</span>
+            <!-- ADICIONA UMA UNIDADE DO JOGO -->
+            <button onclick="adicionarJogo(4)">+</button>
+            </div>
+        </article>
+        <!-- Terminou produto 5 -->
+          <!-- PRODUTO 6: Indice 5-->
+        <article class="produto">
+            <img src="imagens/r6.jpg" alt="Rainbow 6">
+            <h3>Rainbow 6</h3>
+            <p class="preco">R$ sua sanidade mental</p>
+            <!--  Controles para alterar a quantidade do produto -->
+            <div class="quantidade">
+            <!-- REMOVE UMA UNIDADE DO JOGO -->
+            <button onclick="removerJogo(5)">-</button>
+            <!-- QUANTIDADE ATUALIZADA PELO JS -->
+            <span id="qtd5">0</span>
+            <!-- ADICIONA UMA UNIDADE DO JOGO -->
+            <button onclick="adicionarJogo(5)">+</button>
+            </div>
+        </article>
+        <!-- Terminou produto 6 -->
+          <!-- PRODUTO 7: Indice 6-->
+        <article class="produto">
+            <img src="imagens/rdr2.jpg" alt="Red Dead Redemption 2">
+            <h3>Red Dead Redemption 2</h3>
+            <p class="preco">R$ 399,90</p>
+            <!--  Controles para alterar a quantidade do produto -->
+            <div class="quantidade">
+            <!-- REMOVE UMA UNIDADE DO JOGO -->
+            <button onclick="removerJogo(6)">-</button>
+            <!-- QUANTIDADE ATUALIZADA PELO JS -->
+            <span id="qtd6">0</span>
+            <!-- ADICIONA UMA UNIDADE DO JOGO -->
+            <button onclick="adicionarJogo(6)">+</button>
+            </div>
+        </article>
+        <!-- Terminou produto 7 -->
+          <!-- PRODUTO 8: Indice 7-->
+        <article class="produto">
+            <img src="imagens/wardogs.webp" alt="War dogs">
+            <h3>War dogs</h3>
+            <p class="preco">R$ 199,90</p>
+            <!--  Controles para alterar a quantidade do produto -->
+            <div class="quantidade">
+            <!-- REMOVE UMA UNIDADE DO JOGO -->
+            <button onclick="removerJogo(7)">-</button>
+            <!-- QUANTIDADE ATUALIZADA PELO JS -->
+            <span id="qtd7">0</span>
+            <!-- ADICIONA UMA UNIDADE DO JOGO -->
+            <button onclick="adicionarJogo(7)">+</button>
+            </div>
+        </article>
+        <!-- Terminou produto 8 -->
+    </section>
+        <!-- carrinho de compras -->
+    <section class="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <!-- LISTA PREENCHIDA PELO JS COM OS JOGOS -->
+        <ul id="lista">
+        <!-- Campo para digitar o cupon de desconto -->
+        <label for="cupon"> cupom promocional (DEV 10)</label>
+        <!--  oniput executa a função sempre que o usuario digita -->
+        <input
+        id="cupom"
+        type="text"
+        oninput="atualizarTela()"
+        placeholder="Digite o cupom"
+        >
+
+        <!-- Exibe a mensagem de validação do cupom -->
+         <p id="avisoCupom"></p>
+        <!-- Seleção da forma de pagamento -->
+        <label for="pagamento"> Forma de pagamento</label>
+        <!-- onchange executa a função quando a opção é alterada -->
+        <select id="pagamento" onchange="atualizarTela()">
+        <option value="pix"> Pix (10% de desconto)</option>
+        <option value="cartao"> Cartão de crédito (10% de desconto)</option>
+        <option value="boleto"> Boleto (sem desconto)</option>
+        <option value="Cartão de Debito"> Cartão de Debito (5% de desconto)</option>
+    </select>
+        <!--Valores calculados e atualizados pelo JS -->
+        <p>subtotal: <strong id="subtotal"></strong></strong></p>
+        <p> Desconto: <strong id="total"><</strong></p>
+        <p class="total"> Total: <strong id="total"></strong></p>
+        <!-- Executa a função para finalizar a compra -->
+         <button onclick="finalizarCompra()">
+            Finalizar Compra
+            </button>
+            <!-- Executar a função responsável por zerar o carrinho -->
+            <button class="secundario" onclick="limparCarrinho()">
+                Limpar Carrinho
+            </button>
+            
+
+
+
+
+
+    </section>
+</main>
+
+</body>
+</html>
